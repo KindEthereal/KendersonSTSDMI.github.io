@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>食香园</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <a href="index.html" class="logo"><img src="Gambar/logo.png" alt="" /></a>
+
+      <nav class="navbar">
+        <a href="index.html" >Home</a>
+        <a href="about.html"class="active">About</a>
+        <a href="bestseller.html">Best Seller</a>
+        <a href="menu.html">Menu</a>
+        <a href="chef.html">Chef</a>
+      
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-bars" id="menu"></i>
+        <a href="about.html"><i class="fas fa-search"></i></a>
+        <a href="bestseller.html"><i class="fas fa-heart"></i></a>
+        <a href="menu.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </header>
+
+    <!-- slider section -->
+    <div class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slide slide1">
+            <div class="content">
+              <img style="height: 80px" src="Gambar/logo.png" alt="" />
+
+              <h3>Classic Chinese Recipes</h3>
+              <h1>Discount every week</h1>
+              <p>Bring your family here</p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide slide2">
+            <div class="content">
+              <img style="height: 80px" src="Gambar/logo.png" alt="" />
+
+              <h3>Delicious and Authenthic recipes</h3>
+              <h1>From our kitchen to yours</h1>
+              <p>Our latest recipes</p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide slide3">
+            <div class="content">
+              <img style="height: 80px" src="Gambar/logo.png" alt="" />
+
+              <h3>We always serve you the best</h3>
+              <h1>open since 1943</h1>
+              <p>You will love it <i class="fas fa-heart"></i></p>
+              <a href="#" class="btn">Order Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>   
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>Our history</span></h1>
+  
+        <div class="row">
+          <div class="image">
+            <img src="Gambar/About1.png" alt="" />
+          </div>
+  
+          <div class="content">
+            <h3>Our family history</h3>
+            <p>
+              Shi Yao Ming and his parents immigrated to China in 1980
+              from Indonesia. He grew up in Hongkong and attended Xiamen
+              University as a Culinary major. Following graduation, he found his
+              true calling in the culinary field. 
+              Bucking cultural expectations, he started his culinary
+              career in Hongkong. From there, he worked in Taiwan, Beijing and Guangzhou at restaurants Jardiniere and
+              Union Pacific. After more than 20 years of dedication and mastering
+              the complexities of the Culinary industry, he has decided to
+              pursue his dream and follow his cultural roots. This dream is to
+              reimagine and share the cuisine of his heritage in his next culinary
+              adventure, 食香园 Restaurant.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+<!-- footer -->
+<section class="footer">
+  <div class="container">
+    <div>
+      <h3>About Us</h3>
+      <p>
+        We're gonna serve you classic and authenthic chinese food with our
+        family recipes
+      </p>
+    </div>
+
+    <div>
+      <h3>Gets News & Offers</h3>
+      <input type="email" name="" placeholder="enter your email" />
+      <ul>
+        <li>
+          <a href="https://www.twitter.com"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://web.whatsapp.com"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Contact Us</h3>
+      <span>XiangChi@gmail.com</span>
+      <span>+ (62) 12345678</span>
+      <span>+ (62) 87654321</span>
+    </div>
+  </div>
+
+  <p>&copy;2023 reserved by Kenderson</p>
+</section>
+  </body>
+</html>
+
+<!-- Scroll Reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- Script js -->
+<script src="Javascript.js"></script>
+
+<script type="text/javascript">
+  let menu = document.querySelector("#menu");
+  let navbar = document.querySelector(".navbar");
+
+  menu.onclick = () => {
+    menu.classList.toggle("fa-times");
+    navbar.classList.toggle("active");
+  };
+</script>
+</body>
+</html>
